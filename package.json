@@ -1,14 +1,22 @@
 {
-  "name": "99-CSS-Advanced-Course-defence",
+  "name": "SU-CSS-Advanced-final-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/ --recursive"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vekr0w/SU-CSS-Advanced-final-project.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vekr0w/SU-CSS-Advanced-final-project/issues"
+  },
+  "homepage": "https://github.com/vekr0w/SU-CSS-Advanced-final-project#readme",
   "dependencies": {
     "node-sass": "^4.13.0"
   }
