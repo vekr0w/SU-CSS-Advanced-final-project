@@ -1,0 +1,53 @@
+@import "02-variables";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+/* Test note 123123123 */
+
+.template-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto,4, 1fr);
+  grid-template-areas:
+    "vkrw-header vkrw-header vkrw-header vkrw-header vkrw-header vkrw-header"
+    "vkrw-main vkrw-main vkrw-main vkrw-main vkrw-main vkrw-main"
+    "vkrw-aside vkrw-aside vkrw-aside vkrw-aside vkrw-aside vkrw-aside"
+    "vkrw-footer vkrw-footer vkrw-footer vkrw-footer vkrw-footer vkrw-footer";
+}
+
+#vkrw-header {
+  background-color: green;
+  grid-area: vkrw-header;
+  display: flex;
+}
+
+#vkrw-main {
+  background-color: coral;
+  grid-area: vkrw-main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   section{
+     flex: 1;
+   }
+
+}
+#vkrw-aside {
+  background-color: darkblue;
+  grid-area: vkrw-aside;
+  display: flex;
+
+}
+#vkrw-footer {
+  background-color: red;
+  grid-area: vkrw-footer;
+}
