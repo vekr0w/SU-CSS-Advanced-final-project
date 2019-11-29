@@ -19,6 +19,10 @@ img {
   height: auto;
 }
 
+.border-radius-light {
+  border-radius: 5%;
+}
+
 /* Utility CSS */
 
 ul {
@@ -37,10 +41,6 @@ ul {
     background-color: $light-color;
     color: $dark-color;
     transition: opacity 0.5s ease;
-    &:hover {
-      opacity: 0.7;
-      transform: scale(1.1);
-    }
   }
 
   &-dark {
@@ -48,10 +48,11 @@ ul {
     color: $light-color;
     transition: opacity 0.5s ease;
     opacity: 1;
-    &:hover {
-      opacity: 0.7;
-      transform: scale(1.1);
-    }
+  }
+  &-light:hover,
+  &-dark:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
   }
 }
 
@@ -72,7 +73,7 @@ ul {
   background-color: $primary-color;
   grid-area: vkrw-header;
   display: flex;
-  height: 30vh;
+  height: 20vh;
   justify-content: center;
   align-items: center;
   h1 {
@@ -91,28 +92,38 @@ ul {
 #vkrw-main {
   background-color: $secondary-color;
   grid-area: vkrw-main;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
   height: 30vh;
   section {
-    flex: 1;
-    border: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    border: 5px dotted $primary-color;
+    padding: 1rem;
   }
 }
 #vkrw-aside {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   grid-area: vkrw-aside;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  padding: 1rem;
   section {
-    border: 1px solid $primary-color;
+    padding: 1rem;
+    border: 5px solid $primary-color;
+    transition: border, 5s, ease;
+    &:hover {
+      border-top-color: $secondary-color;
+      border-bottom-color: $secondary-color;
+    }
   }
 }
 #vkrw-footer {
-  background-color: $primary-color;
+  background-color: $dark-color;
+  color: $light-color;
   grid-area: vkrw-footer;
   text-align: center;
 }

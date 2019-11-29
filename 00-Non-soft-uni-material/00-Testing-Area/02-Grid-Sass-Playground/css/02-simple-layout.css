@@ -13,6 +13,9 @@ img {
   width: 100%;
   height: auto; }
 
+.border-radius-light {
+  border-radius: 5%; }
+
 /* Utility CSS */
 ul {
   list-style-type: none; }
@@ -25,20 +28,17 @@ ul {
   border-radius: 5%;
   opacity: 1; }
   .btn-light {
-    background-color: #F2F2F2;
-    color: #333333;
+    background-color: #fdfffc;
+    color: #011627;
     transition: opacity 0.5s ease; }
-    .btn-light:hover {
-      opacity: 0.7;
-      transform: scale(1.1); }
   .btn-dark {
-    background-color: #333333;
-    color: #F2F2F2;
+    background-color: #011627;
+    color: #fdfffc;
     transition: opacity 0.5s ease;
     opacity: 1; }
-    .btn-dark:hover {
-      opacity: 0.7;
-      transform: scale(1.1); }
+  .btn-light:hover, .btn-dark:hover {
+    opacity: 0.7;
+    transform: scale(1.1); }
 
 /* Layout CSS */
 .template-container {
@@ -48,16 +48,16 @@ ul {
   grid-template-areas: "vkrw-header vkrw-header vkrw-header vkrw-header" "vkrw-main vkrw-main vkrw-main vkrw-main" "vkrw-aside vkrw-aside vkrw-aside vkrw-aside" "vkrw-footer vkrw-footer vkrw-footer vkrw-footer"; }
 
 #vkrw-header {
-  background-color: #234465;
+  background-color: #2ec4b6;
   grid-area: vkrw-header;
   display: flex;
-  height: 30vh;
+  height: 20vh;
   justify-content: center;
   align-items: center; }
   #vkrw-header h1 {
     flex: 3;
     text-align: center;
-    color: #F2F2F2; }
+    color: #fdfffc; }
   #vkrw-header .navigation {
     flex: 1;
     display: flex;
@@ -65,27 +65,36 @@ ul {
     justify-content: space-evenly; }
 
 #vkrw-main {
-  background-color: steelblue;
+  background-color: #ff9f1c;
   grid-area: vkrw-main;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
   height: 30vh; }
   #vkrw-main section {
-    flex: 1;
-    border: 1px solid #234465; }
+    display: flex;
+    flex-direction: column;
+    border: 5px dotted #2ec4b6;
+    padding: 1rem; }
 
 #vkrw-aside {
-  background-color: steelblue;
+  background-color: #2ec4b6;
   grid-area: vkrw-aside;
   display: flex;
-  justify-content: space-around;
-  text-align: center; }
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem; }
   #vkrw-aside section {
-    border: 1px solid #234465; }
+    padding: 1rem;
+    border: 5px solid #2ec4b6;
+    transition: border, 5s, ease; }
+    #vkrw-aside section:hover {
+      border-top-color: #ff9f1c;
+      border-bottom-color: #ff9f1c; }
 
 #vkrw-footer {
-  background-color: #234465;
+  background-color: #011627;
+  color: #fdfffc;
   grid-area: vkrw-footer;
   text-align: center; }
