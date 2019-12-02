@@ -48,10 +48,10 @@ ul {
   grid-template-areas: "vkrw-header vkrw-header vkrw-header vkrw-header" "vkrw-main vkrw-main vkrw-main vkrw-main" "vkrw-aside vkrw-aside vkrw-aside vkrw-aside" "vkrw-footer vkrw-footer vkrw-footer vkrw-footer"; }
 
 #vkrw-header {
-  background-color: #2ec4b6;
+  background: url("https://images.unsplash.com/photo-1552386200-f0d20cc1bd23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80") no-repeat center center/cover;
   grid-area: vkrw-header;
   display: flex;
-  height: 20vh;
+  height: 30vh;
   justify-content: center;
   align-items: center; }
   #vkrw-header h1 {
@@ -87,11 +87,10 @@ ul {
   padding: 1rem; }
   #vkrw-aside section {
     padding: 1rem;
-    border: 5px solid #2ec4b6;
-    transition: border, 5s, ease; }
+    border: 3px solid #2ec4b6;
+    transition: border 0.5s ease; }
     #vkrw-aside section:hover {
-      border-top-color: #ff9f1c;
-      border-bottom-color: #ff9f1c; }
+      border-top-color: #ff9f1c; }
 
 #vkrw-footer {
   background-color: #011627;

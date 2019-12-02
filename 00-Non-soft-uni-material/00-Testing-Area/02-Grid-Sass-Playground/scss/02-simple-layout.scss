@@ -70,10 +70,10 @@ ul {
 }
 
 #vkrw-header {
-  background-color: $primary-color;
+  background: $header-image no-repeat center center / cover;
   grid-area: vkrw-header;
   display: flex;
-  height: 20vh;
+  height: 30vh;
   justify-content: center;
   align-items: center;
   h1 {
@@ -113,11 +113,10 @@ ul {
   padding: 1rem;
   section {
     padding: 1rem;
-    border: 5px solid $primary-color;
-    transition: border, 5s, ease;
+    border: 3px solid $primary-color;
+    transition: border 0.5s ease;
     &:hover {
       border-top-color: $secondary-color;
-      border-bottom-color: $secondary-color;
     }
   }
 }
