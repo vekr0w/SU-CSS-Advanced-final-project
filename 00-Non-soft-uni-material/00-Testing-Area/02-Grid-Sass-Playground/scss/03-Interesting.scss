@@ -1,6 +1,6 @@
 // variables
 
-$background-image: url("https://images.unsplash.com/photo-1549899429-047eb2085d0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=100");
+$header-image: url("https://images.unsplash.com/photo-1490106679382-83ba183019d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 $primary-color: #f4acb7;
 $secondary-color: #ffcad4;
 $dark-color: #9d8189;
@@ -84,8 +84,8 @@ a {
 
 #site-header {
   grid-area: header;
-  background-color: $primary-color;
-  height: 30vh;
+  background: $header-image no-repeat center center / cover;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
