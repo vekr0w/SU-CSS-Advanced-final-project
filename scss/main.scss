@@ -7,19 +7,4 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  padding: 4rem;
-  li {
-    display: flex;
-    flex-direction: row;
-    margin: 0.3rem;
-  }
-  .btn {
-    flex: 0.5;
-    background-color: red;
-  }
-  h1 {
-    flex: 4;
-    background-color: green;
-  }
-}
+
