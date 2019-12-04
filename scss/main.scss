@@ -44,6 +44,7 @@ img {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  padding-top: 1rem;
   ul {
     display: flex;
   }
@@ -51,22 +52,39 @@ img {
     margin: 1rem 1.5rem;
   }
 
-  a{
+  a {
     text-transform: uppercase;
     color: #fff;
-    
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    &:hover {
+      border-color: $primary-color;
+    }
+    &.current{
+      border-color: $primary-color;
+    }
   }
-  
 }
 
-// Header text
+
 
 // Header
 
 #header {
+  // Header home
   &-home {
     background: $header-image no-repeat center center / cover;
     height: 100vh;
     color: #fff;
+    .header-content{
+      text-align: center;
+      padding-top: 20%;
+      h1{
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+    }
   }
+  // Header inner
 }
