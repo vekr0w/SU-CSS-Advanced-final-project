@@ -61,13 +61,11 @@ img {
     &:hover {
       border-color: $primary-color;
     }
-    &.current{
+    &.current {
       border-color: $primary-color;
     }
   }
 }
-
-
 
 // Header
 
@@ -77,14 +75,38 @@ img {
     background: $header-image no-repeat center center / cover;
     height: 100vh;
     color: #fff;
-    .header-content{
+    line-height: 1.6;
+    .header-content {
       text-align: center;
-      padding-top: 20%;
-      h1{
+      padding-top: 10%;
+      h1 {
         font-size: 3rem;
         line-height: 1.2;
       }
     }
   }
   // Header inner
+}
+
+#home-a {
+  text-align: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wwh-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-container {
+    border-radius: 50%;
+    background-color: $dark-color;
+    .i {
+      padding: 4rem;
+    }
+  }
+  .wwh-content {
+    padding-top: 1rem;
+  }
 }

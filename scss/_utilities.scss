@@ -1,5 +1,5 @@
 .lead {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .py-1 {
@@ -18,20 +18,30 @@
   max-width: $website-width;
   overflow: hidden;
 }
-
+.scroll-down {
+  padding-top: 1rem;
+}
 .btn {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
   padding: 1rem 1.3rem;
   &-lead {
-    color: $light-color;
+    color: #fff;
+    text-align: center;
+    transition: transform 1s ease;
+    &:hover {
+      transform: translateY(40px) scale(1.3);
+    }
   }
-
   &-light {
+    background-color: $light-color;
+    color: #000;
   }
 
   &-dark {
+    background-color: $dark-color;
     color: #ffffff;
   }
 }
