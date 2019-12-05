@@ -1,9 +1,37 @@
-.lead{
+.lead {
   font-size: 1.4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
 }
 
 .container {
   padding: 2rem 1rem;
   margin: auto;
   max-width: $website-width;
+  overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 1.3rem;
+  &-lead {
+    color: $light-color;
+  }
+
+  &-light {
+  }
+
+  &-dark {
+    color: #ffffff;
+  }
 }
