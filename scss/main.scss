@@ -12,6 +12,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  background-color: $secondary-color;
 }
 
 a {
@@ -86,27 +87,92 @@ img {
     }
   }
   // Header inner
+  &-inner {
+    background: $header-image no-repeat center 40% / cover;
+  }
 }
+
+// Home-a "what we have" wwh/
 
 #home-a {
   text-align: center;
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: $primary-color;
   }
   .wwh-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
   .icon-container {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: $dark-color;
-    .i {
-      padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    color: $dark-color;
+    transition: background-color 1s ease;
+    a {
+      transition: transform 1s ease, color 1s ease;
+      color: $dark-color;
+    }
+    &:hover {
+      background-color: $dark-color;
+      color: $light-color;
+      a {
+        transform: scale(1.4);
+        color: $light-color;
+      }
     }
   }
   .wwh-content {
     padding-top: 1rem;
+    color: $dark-color;
+  }
+}
+
+// inner-a 
+
+
+
+// Footer
+
+#footer {
+  .container {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .social-media-container {
+      display: block;
+      a {
+        padding: 1.1rem 2rem;
+        color: $dark-color;
+        transition: color 0.5s;
+        &:hover {
+          color: $light-color;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: inline-block;
+    color: $dark-color;
   }
 }

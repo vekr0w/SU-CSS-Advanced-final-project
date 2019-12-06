@@ -9,7 +9,12 @@
       src="https://kit.fontawesome.com/597dde3a29.js"
       crossorigin="anonymous"
     ></script>
-    <title>Testing SASS</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Stefiy's</title>
   </head>
   <body>
     <div class="site-wrapper">
@@ -27,21 +32,23 @@
           </nav>
           <div class="header-content">
             <h1 class="py-2">Пекарна "При Стефи"</h1>
-            <p class="lead">Най-добрите сладкари&пекари са при нас</p>
+            <p class="lead">Най-добрите сладкари&пекари са при нас !</p>
             <div class="scroll-down">
               <a href="#home-a" class="btn btn-lead">
-                <i class="fas fa-arrow-down fa-4x"></i>
+                <i class="fas fa-arrow-down fa-2x"></i>
               </a>
             </div>
           </div>
         </div>
       </header>
-      <!-- home content -->
+      <!-- home-a content -->
       <section id="home-a">
         <div class="container py-2">
           <div class="wwh-container">
             <div class="icon-container">
-              <i class="fas fa-bread-slice fa-3x"></i>
+              <a href="recepies.html">
+                <i class="fas fa-bread-slice fa-4x"></i>
+              </a>
             </div>
             <div class="wwh-content">
               <h4>30+ вида хляб</h4>
@@ -49,7 +56,9 @@
           </div>
           <div class="wwh-container">
             <div class="icon-container">
-              <i class="fas fa-cookie fa-3x"></i>
+              <a href="recepies.html">
+                <i class="fas fa-cookie fa-4x"></i>
+              </a>
             </div>
             <div class="wwh-content">
               <h4>50+ вида сладки изделия</h4>
@@ -57,7 +66,9 @@
           </div>
           <div class="wwh-container">
             <div class="icon-container ">
-              <i class="fas fa-mug-hot fa-3x"></i>
+              <a href="recepies.html">
+                <i class="fas fa-mug-hot fa-4x"></i>
+              </a>
             </div>
             <div class="wwh-content">
               <h4>20+ вида топли напитки</h4>
@@ -65,10 +76,34 @@
           </div>
         </div>
       </section>
+      <!-- home-b content -->
       <section id="home-b"></section>
       <!-- footer -->
-      <footer id="footer"></footer>
+      <footer id="footer">
+        <div class="container">
+          <div class="social-media">
+            <div class="social-media-container">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </div>
+            <div class="social-media-container">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </div>
+            <div class="social-media-container">
+              <a href="contacts.html" target="_blank">
+                <i class="fas fa-mobile fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>All rights reserved 2019 &copy;</p>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- <script src="javascript/main.js"></script> -->
+    <script src="javascript/main.js"></script>
   </body>
 </html>
