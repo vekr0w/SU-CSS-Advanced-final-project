@@ -139,9 +139,42 @@ img {
   }
 }
 
-// inner-a 
+// inner-a
 
+#inner-a {
+  .recepies {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+  }
+  .recepie-container {
+    display: flex;
+    flex-direction: row;
+  }
+  //recepies header
+  .recepies-header {
+    text-align: center;
+  }
 
+  // image
+  .img-rcp-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 5px;
+    }
+  }
+  // ingredients content
+  .ingr-rcp-container {
+    flex: 2;
+    padding: 0 2rem;
+    h3,
+    h4 {
+      text-align: center;
+    }
+  }
+}
 
 // Footer
 

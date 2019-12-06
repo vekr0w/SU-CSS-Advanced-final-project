@@ -139,6 +139,32 @@ img {
     padding-top: 1rem;
     color: #9d8189; }
 
+#inner-a .recepies {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4acb7; }
+
+#inner-a .recepie-container {
+  display: flex;
+  flex-direction: row; }
+
+#inner-a .recepies-header {
+  text-align: center; }
+
+#inner-a .img-rcp-container {
+  flex: 1;
+  display: flex;
+  align-items: center; }
+  #inner-a .img-rcp-container img {
+    border-radius: 5px; }
+
+#inner-a .ingr-rcp-container {
+  flex: 2;
+  padding: 0 2rem; }
+  #inner-a .ingr-rcp-container h3,
+  #inner-a .ingr-rcp-container h4 {
+    text-align: center; }
+
 #footer .container {
   background-color: #f4acb7;
   display: flex;
