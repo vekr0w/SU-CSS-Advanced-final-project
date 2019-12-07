@@ -204,6 +204,20 @@ img {
     #recepies-a .recepies-footer .subscribe-form ul li {
       margin: 0.5rem; }
 
+#gallery .gallery-header {
+  text-align: center; }
+
+#gallery .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+#gallery .item {
+  position: relative; }
+  #gallery .item .item-text {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
 #footer .container {
   background-color: #f4acb7;
   display: flex;
