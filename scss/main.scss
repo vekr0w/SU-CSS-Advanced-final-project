@@ -139,9 +139,10 @@ img {
   }
 }
 
-// inner-a
+// recepies-a
 
-#inner-a {
+#recepies-a {
+  // container flex
   .recepies {
     display: flex;
     flex-direction: column;
@@ -150,6 +151,7 @@ img {
   .recepie-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   //recepies header
   .recepies-header {
@@ -163,15 +165,46 @@ img {
     align-items: center;
     img {
       border-radius: 5px;
+      opacity: 0.9;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
-  // ingredients content
-  .ingr-rcp-container {
+  .prep-rcp-container {
     flex: 2;
     padding: 0 2rem;
     h3,
     h4 {
       text-align: center;
+    }
+    ul {
+      li {
+        border-bottom: 1px dotted $dark-color;
+      }
+    }
+    p {
+      line-height: 1.7;
+    }
+  }
+
+  // recepies footer
+
+  .recepies-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    .subscribe-form {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li{
+          margin: 0.5rem;
+        }
+      }
     }
   }
 }
