@@ -7,3 +7,15 @@ $dark-color: #9d8189;
 $medium-color: #d8e2dc;
 $header-image: url("../images/header-image.jpg");
 
+
+
+// set text color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
+}
+
