@@ -210,7 +210,19 @@ img {
   }
 }
 
-// Contact page
+// Success-page
+
+.container-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .success-content {
+    background-color: $primary-color;
+  }
+}
 
 // Footer
 
