@@ -56,15 +56,36 @@
                 ще получите обратна връзка от нас
               </h4>
             </header>
-            <div class="form-container ">
-              <form action="form-page.html" method="get">
-                <input type="text" placeholder="Име" />
-                <input type="text" placeholder="Имейл" />
-                <textarea
-                  name="text-area-content"
-                  id="text-area-content"
-                  placeholder="Вашето съобщение"
-                ></textarea>
+            <div class="form-container">
+              <form action="form-page.html" method="get" class="subscribe-form">
+                <ul>
+                  <li>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Име"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Имейл"
+                    />
+                  </li>
+                  <li>
+                    <textarea
+                      name="text-area"
+                      id="text-area"
+                      placeholder="Вашият текст"
+                    ></textarea>
+                  </li>
+                  <li>
+                    <a href="form-page.html" class="btn btn-dark">Изпрати!</a>
+                  </li>
+                </ul>
               </form>
             </div>
           </div>
