@@ -350,12 +350,16 @@ img {
 @media screen and (max-width: 768px) {
   #header-home .main-nav {
     flex-direction: column; }
+  #header-home li {
+    margin: 0.5rem 0.5rem; }
   #home-a .container {
     flex-direction: column; }
   #home-a .wwh-container {
     margin-bottom: 1rem; }
   #header-inner .main-nav {
     flex-direction: column; }
+  #header-inner li {
+    margin: 0.5rem 0.5rem; }
   #gallery .items {
     grid-template-columns: repeat(1, 1fr); }
     #gallery .items .item:last-child {

@@ -33,6 +33,9 @@
     .main-nav {
       flex-direction: column;
     }
+    li {
+      margin: 0.5rem 0.5rem;
+    }
   }
   #home-a {
     .container {
@@ -47,6 +50,9 @@
   #header-inner {
     .main-nav {
       flex-direction: column;
+    }
+    li {
+      margin: 0.5rem 0.5rem;
     }
   }
 
