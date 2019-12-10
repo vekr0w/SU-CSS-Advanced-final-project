@@ -103,6 +103,7 @@
   #header-inner {
     .main-nav {
       flex-direction: row;
+      align-items: flex-start;
     }
     ul {
       flex-direction: column;

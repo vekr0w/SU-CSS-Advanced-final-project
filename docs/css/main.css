@@ -379,6 +379,7 @@ img {
   #header-home .header-content p {
     font-size: 1rem; }
   #header-inner .main-nav {
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: flex-start; }
   #header-inner ul {
     flex-direction: column; } }
