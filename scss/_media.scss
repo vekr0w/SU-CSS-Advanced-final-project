@@ -26,7 +26,35 @@
 
 // Max width 768px
 
-
 @media screen and (max-width: 768px) {
+  // home-page
 
+  #header-home {
+    .main-nav {
+      flex-direction: column;
+    }
+  }
+  #home-a {
+    .container {
+      flex-direction: column;
+    }
+    .wwh-container {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // header-inner
+  #header-inner {
+    .main-nav {
+      flex-direction: column;
+    }
+  }
+
+  // Gallery-page
+
+  #gallery {
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }

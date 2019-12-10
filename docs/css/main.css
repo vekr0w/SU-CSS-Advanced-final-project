@@ -188,6 +188,7 @@ img {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 1rem; }
   .main-nav ul {
     display: flex; }
@@ -345,3 +346,15 @@ img {
     grid-template-columns: repeat(2, 1fr); }
     #gallery .items .item:last-child {
       display: none; } }
+
+@media screen and (max-width: 768px) {
+  #header-home .main-nav {
+    flex-direction: column; }
+  #home-a .container {
+    flex-direction: column; }
+  #home-a .wwh-container {
+    margin-bottom: 1rem; }
+  #header-inner .main-nav {
+    flex-direction: column; }
+  #gallery .items {
+    grid-template-columns: repeat(1, 1fr); } }
