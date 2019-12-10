@@ -149,6 +149,12 @@ textarea {
 #contact-page .contact-b textarea {
   min-height: 200px; }
 
+@media screen and (max-width: 1024px) {
+  #gallery .items {
+    grid-template-columns: repeat(2, 1fr); }
+    #gallery .items .item:last-child {
+      display: none; } }
+
 * {
   margin: 0;
   padding: 0;
