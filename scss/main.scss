@@ -2,7 +2,7 @@
 @import "utilities";
 @import "gallery";
 @import "contacts";
-
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +12,15 @@
 // General Styles
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $default-font-family;
   line-height: 1.6;
   background-color: $secondary-color;
+}
+input,
+li,
+a,
+textarea {
+  font-family: $default-font-family;
 }
 
 a {
@@ -213,6 +219,7 @@ img {
 // Success-page
 
 .container-success {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,7 +227,8 @@ img {
   text-align: center;
 
   .success-content {
-    background-color: $primary-color;
+    padding: 2rem;
+    border-radius: 5px;
   }
 }
 
