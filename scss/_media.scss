@@ -22,6 +22,17 @@
       }
     }
   }
+
+  // contact-page
+
+  #contact-page {
+    .contact-b {
+      textarea,
+      input {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Max width 768px
@@ -64,6 +75,37 @@
       .item:last-child {
         display: flex;
       }
+    }
+  }
+}
+
+// Max width 320px
+@media screen and (max-width: 320px) {
+  // navbar
+
+  #header-home {
+    .main-nav {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    ul {
+      flex-direction: column;
+    }
+    .header-content {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  #header-inner {
+    .main-nav {
+      flex-direction: row;
+    }
+    ul {
+      flex-direction: column;
     }
   }
 }

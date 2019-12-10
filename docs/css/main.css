@@ -345,7 +345,10 @@ img {
   #gallery .items {
     grid-template-columns: repeat(2, 1fr); }
     #gallery .items .item:last-child {
-      display: none; } }
+      display: none; }
+  #contact-page .contact-b textarea,
+  #contact-page .contact-b input {
+    width: 100%; } }
 
 @media screen and (max-width: 768px) {
   #header-home .main-nav {
@@ -364,3 +367,18 @@ img {
     grid-template-columns: repeat(1, 1fr); }
     #gallery .items .item:last-child {
       display: flex; } }
+
+@media screen and (max-width: 320px) {
+  #header-home .main-nav {
+    flex-direction: row;
+    align-items: flex-start; }
+  #header-home ul {
+    flex-direction: column; }
+  #header-home .header-content h1 {
+    font-size: 1.5rem; }
+  #header-home .header-content p {
+    font-size: 1rem; }
+  #header-inner .main-nav {
+    flex-direction: row; }
+  #header-inner ul {
+    flex-direction: column; } }
