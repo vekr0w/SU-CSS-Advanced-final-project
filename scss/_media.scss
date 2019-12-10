@@ -1,0 +1,27 @@
+// Max width 1024px
+@media screen and (max-width: 1024px) {
+  // recepies page
+
+  #recepies-a {
+    .recepie-container {
+      flex-direction: column;
+    }
+
+    img {
+      height: 40vh;
+      object-fit: cover;
+    }
+  }
+
+  // gallery page
+  #gallery {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+      .item:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+// Max width 768px

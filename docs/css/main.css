@@ -149,12 +149,6 @@ textarea {
 #contact-page .contact-b textarea {
   min-height: 200px; }
 
-@media screen and (max-width: 1024px) {
-  #gallery .items {
-    grid-template-columns: repeat(2, 1fr); }
-    #gallery .items .item:last-child {
-      display: none; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -340,3 +334,14 @@ img {
 #footer .copyright {
   display: inline-block;
   color: #9d8189; }
+
+@media screen and (max-width: 1024px) {
+  #recepies-a .recepie-container {
+    flex-direction: column; }
+  #recepies-a img {
+    height: 40vh;
+    object-fit: cover; }
+  #gallery .items {
+    grid-template-columns: repeat(2, 1fr); }
+    #gallery .items .item:last-child {
+      display: none; } }
