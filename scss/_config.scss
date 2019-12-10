@@ -10,10 +10,10 @@ $default-font-family: "Roboto", sans-serif;
 
 // set text color
 
-@function set-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return $dark-color;
-  } @else {
-    @return $light-color;
-  }
-}
+// @function set-text-color($color) {
+//   @if (lightness($color) > 50) {
+//     @return $dark-color;
+//   } @else {
+//     @return $light-color;
+//   }
+// }
