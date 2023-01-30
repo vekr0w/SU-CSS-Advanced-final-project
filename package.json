@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/vekr0w/SU-CSS-Advanced-final-project#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
